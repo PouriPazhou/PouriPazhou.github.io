@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Business Analyst / Operations Analyst portfolio: process improvement, reporting, automation, and systems." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container header">
+    <div>
+      <h1>Your Name</h1>
+      <p class="subtitle">Business Analyst • Operations / Business Ops • Reporting • Automation</p>
+      <p class="meta">Vancouver, BC • Open to Junior / Contract</p>
+      <div class="links">
+        <a class="btn" href="assets/Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+        <a class="btn secondary" href="mailto:youremail@example.com">Email</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn secondary" href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        I help teams reduce manual work, improve reporting, and document processes clearly.
+        I’ve delivered workflow improvements and reporting solutions, including reducing manual data entry by 60% within 10 weeks.
+      </p>
+      <div class="chips">
+        <span>Process Mapping</span><span>Requirements</span><span>Excel (Power Query, PivotTables)</span>
+        <span>Power BI (Basic DAX)</span><span>Zapier / Make</span><span>Stakeholder Communication</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="project">
+          <h3>Process Improvement Case Study</h3>
+          <p class="small">Operations / Business Ops</p>
+          <p>As-is → to-be workflow redesign with pain points, improvements, and estimated impact.</p>
+          <div class="project-links">
+            <a href="projects/process-case-study.html">View</a>
+            <a href="assets/process-case-study.pdf" target="_blank" rel="noreferrer">PDF</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Power BI Dashboard</h3>
+          <p class="small">Data & Analytics</p>
+          <p>Interactive dashboard with KPIs and basic DAX measures.</p>
+          <div class="project-links">
+            <a href="projects/powerbi-dashboard.html">View</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Automation Scenarios (Zapier / Make)</h3>
+          <p class="small">Automation / Systems</p>
+          <p>Workflow diagrams + screenshots showing triggers, actions, and business benefit.</p>
+          <div class="project-links">
+            <a href="projects/automation-scenarios.html">View</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Portfolio Tracks</h2>
+      <div class="grid">
+        <a class="track" href="tracks/ops-business-ops.html">1) Operations & Business Ops</a>
+        <a class="track" href="tracks/business-analysis.html">2) Business Analysis</a>
+        <a class="track" href="tracks/data-analytics.html">3) Data & Analytics</a>
+        <a class="track" href="tracks/it-technical.html">4) IT & Technical</a>
+        <a class="track" href="tracks/automation-systems.html">5) Automation / No-code</a>
+        <a class="track" href="tracks/training-education.html">6) Training / Education</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="small">© <span id="year"></span> Your Name • Built on GitHub Pages</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

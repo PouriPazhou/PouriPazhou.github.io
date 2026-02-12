@@ -1,0 +1,93 @@
+:root{
+  --bg:#0b0f17;
+  --card:#121a28;
+  --text:#e7eefc;
+  --muted:#a7b3cc;
+  --line:#23314d;
+  --accent:#6ea8fe;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #0b0f17 0%, #0a1220 100%);
+  color:var(--text);
+}
+a{color:inherit}
+.container{max-width:980px;margin:0 auto;padding:28px 18px}
+.header{padding-top:48px;padding-bottom:18px}
+h1{margin:0 0 6px 0;font-size:42px;letter-spacing:-0.5px}
+.subtitle{margin:0;color:var(--muted);font-size:18px}
+.meta{margin:10px 0 0 0;color:var(--muted)}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+
+.btn{
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:12px;
+  background:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.btn.secondary{
+  background:transparent;
+  border:1px solid var(--line);
+  color:var(--text);
+}
+
+.card{
+  background:rgba(18,26,40,0.9);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px;
+  margin:14px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+h2{margin:0 0 12px 0}
+.small{color:var(--muted);font-size:13px;margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chips span{
+  border:1px solid var(--line);
+  padding:6px 10px;
+  border-radius:999px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:12px;
+}
+@media (max-width: 860px){
+  .grid{grid-template-columns: 1fr;}
+  h1{font-size:34px}
+}
+
+.project{
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:14px;
+  background: rgba(10,18,32,0.5);
+}
+.project h3{margin:0 0 6px 0}
+.project-links{display:flex;gap:12px;margin-top:10px}
+.project-links a{
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:600;
+}
+
+.track{
+  display:block;
+  padding:12px 14px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  text-decoration:none;
+  background: rgba(10,18,32,0.5);
+}
+.track:hover{border-color:var(--accent)}
+
+.footer{padding:10px 0 30px 0;text-align:center}

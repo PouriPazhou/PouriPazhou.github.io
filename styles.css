@@ -91,3 +91,36 @@ h2{margin:0 0 12px 0}
 .track:hover{border-color:var(--accent)}
 
 .footer{padding:10px 0 30px 0;text-align:center}
+
+.backrow{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+}
+
+.two{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px;
+}
+@media (max-width: 860px){
+  .two{grid-template-columns: 1fr;}
+}
+
+figure{
+  margin:0;
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  background: rgba(10,18,32,0.5);
+}
+figure img{width:100%;display:block}
+figcaption{
+  padding:10px 12px;
+  color:var(--muted);
+  font-size:13px;
+  border-top:1px solid var(--line);
+}
+
+ul{margin:10px 0 0 20px}
